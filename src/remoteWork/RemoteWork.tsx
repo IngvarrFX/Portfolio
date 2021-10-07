@@ -1,16 +1,16 @@
 import React from "react"
-import styles from "./Freelance.module.css"
+import styles from "./RemoteWork.module.css"
 import stylesContainer from "../common/styles/Container.module.css";
 
 type PropsType = {
 
 }
 
-export const Freelance=(props: PropsType) => {
+export const RemoteWork=(props: PropsType) => {
     return (
-        <div className={styles.freelanceBlock}>
+        <div className={styles.remoteWorkBlock}>
             <div className={stylesContainer.container}>
-                <div className={styles.freelanceContainer}>
+                <div className={styles.remoteWorkContainer}>
                 <div className={styles.text}>
                     <h3>Considering options for remote work</h3>
                 </div>

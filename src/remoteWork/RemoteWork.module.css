@@ -1,9 +1,9 @@
-.freelanceBlock{
+.remoteWorkBlock{
     background-color: #b1ffe5;
     border: 1px solid;
     min-height: 30vh;
 }
-.freelanceContainer{
+.remoteWorkContainer{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,6 +16,6 @@
 .text{
     background-color: #61dafb;
 }
-.freelanceContainer a {
+.remoteWorkContainer a {
     border: 1px solid;
 }
