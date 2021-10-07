@@ -1,13 +1,12 @@
 .projectsBlock {
     border: 1px solid;
-    height: 100vh;
+    min-height: 100vh;
     background: #b1ffe5;
 
 }
 .projectsContainer {
     border: 1px solid;
     flex-direction: column;
-    /*justify-content: flex-start;*/
 }
 .projects{
     border: 1px solid;

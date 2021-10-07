@@ -13,13 +13,13 @@ export const Contacts=(props: PropsType) => {
             <div className={stylesContainer.container}>
                 <div className={styles.contactsContainer}>
                         <h3>Contacts</h3>
-                    <div className={styles.formContainer}>
                     <form action="/action_page.php">
                         <Input titleHolder={'first name'}type={'text'}/>
                         <Input titleHolder={'last name'} type={'text'}/>
                         <textarea className={styles.textField}></textarea>
                     </form>
-                        <Input titleHolder={'submit'} type={'submit'}/>
+                    <div>
+                        <a href="#">submit</a>
                     </div>
                 </div>
             </div>

@@ -1,11 +1,11 @@
 .footerBlock{
     background-color: #b1ffe5;
-    height: 400px;
+    min-height: 400px;
     border: 1px solid;
 }
 
 .footerContainer{
-    height: 200px;
+    min-height: 200px;
     width: 100%;
     margin: 0 auto;
     text-align: center;
@@ -17,6 +17,11 @@
 }
 .itemContainer{
     border: 1px solid;
-    width: 400px;
-    height: 80px;
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.image {
+    height: 50px;
+    border-radius: 11px;
 }

@@ -1,23 +1,25 @@
 .contactsBlock{
     background-color: #b1ffe5;
-    height: 700px;
+    min-height: 700px;
     border: 1px solid;
 }
 
 .contactsContainer{
-    height: 500px;
+    min-height: 500px;
     margin: 0 auto;
     text-align: center;
     border: 1px solid;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
-
+.contactsContainer a {
+    border: 1px solid;
+}
 
 .formContainer{
     width: 400px;
-    height: 70%;
+    min-height: 70%;
     border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -25,7 +27,7 @@
 }
 
 .textField{
-    height: 90%;
-    width: 390px;
+    min-height: 90%;
+    width: 200px;
     border: 1px solid;
 }
