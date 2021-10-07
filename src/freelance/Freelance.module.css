@@ -1,0 +1,21 @@
+.freelanceBlock{
+    background-color: #b1ffe5;
+    border: 1px solid;
+    height: 30vh;
+}
+.freelanceContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    padding: 10px 0;
+    border: 1px solid;
+}
+.text{
+    background-color: #61dafb;
+}
+.freelanceContainer a {
+    border: 1px solid;
+}
