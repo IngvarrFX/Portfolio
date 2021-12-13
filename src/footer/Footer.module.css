@@ -17,9 +17,13 @@
 }
 .itemContainer{
     border: 1px solid;
-    width: 20%;
+    min-width: 20%;
+
     display: flex;
     justify-content: space-around;
+}
+.itemContainer a{
+    padding: 0 5px;
 }
 .image {
     height: 50px;

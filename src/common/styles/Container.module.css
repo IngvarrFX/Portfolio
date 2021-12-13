@@ -8,3 +8,10 @@
     flex-wrap: wrap;
     border: 1px solid;
 }
+
+
+@media screen and (max-width: 788px) {
+    .container{
+        justify-content: center;
+    }
+}

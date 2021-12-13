@@ -1,6 +1,6 @@
-import React from 'react';
-import styles from './Main.module.css'
-import stylesContainer from '../common/styles/Container.module.css'
+import React from "react";
+import styles from "./Main.module.css"
+import stylesContainer from "../common/styles/Container.module.css"
 
 export const Main = () => {
     return (
