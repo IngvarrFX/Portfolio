@@ -11,17 +11,22 @@
     border: 1px solid;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1014px) {
     .projects {
-        align-items: center;
-        flex-direction: column;
+
     }
 
 }
+@media screen and (max-width: 765px) {
+    .projects {
+    flex-direction: column;
+    }
+}
+
 
 
 

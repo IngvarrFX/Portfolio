@@ -1,5 +1,4 @@
 .remoteWorkBlock{
-    background-color: #b1ffe5;
     border: 1px solid;
     min-height: 30vh;
 }
@@ -14,7 +13,8 @@
     border: 1px solid;
 }
 .text{
-    background-color: #61dafb;
+    align-items: center;
+
 }
 .remoteWorkContainer a {
     border: 1px solid;

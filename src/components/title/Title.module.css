@@ -15,3 +15,9 @@
 .title span{
     color: #72b626;
 }
+@media screen and (max-width: 765px) {
+    .title {
+        font-size: 30px;
+    }
+}
+
