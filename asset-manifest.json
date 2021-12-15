@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.33159404.chunk.css",
-    "main.js": "/Portfolio/static/js/main.efc278c8.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.efc278c8.chunk.js.map",
-    "runtime-main.js": "/Portfolio/static/js/runtime-main.a82e31ea.js",
-    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.a82e31ea.js.map",
-    "static/js/2.748c180c.chunk.js": "/Portfolio/static/js/2.748c180c.chunk.js",
-    "static/js/2.748c180c.chunk.js.map": "/Portfolio/static/js/2.748c180c.chunk.js.map",
-    "static/js/3.3366b4c1.chunk.js": "/Portfolio/static/js/3.3366b4c1.chunk.js",
-    "static/js/3.3366b4c1.chunk.js.map": "/Portfolio/static/js/3.3366b4c1.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.3f4cb0ba.chunk.css",
+    "main.js": "/Portfolio/static/js/main.2128bfea.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.2128bfea.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.bc9f973c.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.bc9f973c.js.map",
+    "static/js/2.25125ef5.chunk.js": "/Portfolio/static/js/2.25125ef5.chunk.js",
+    "static/js/2.25125ef5.chunk.js.map": "/Portfolio/static/js/2.25125ef5.chunk.js.map",
+    "static/js/3.6b6d7a12.chunk.js": "/Portfolio/static/js/3.6b6d7a12.chunk.js",
+    "static/js/3.6b6d7a12.chunk.js.map": "/Portfolio/static/js/3.6b6d7a12.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "static/css/main.33159404.chunk.css.map": "/Portfolio/static/css/main.33159404.chunk.css.map",
-    "static/js/2.748c180c.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.748c180c.chunk.js.LICENSE.txt",
+    "static/css/main.3f4cb0ba.chunk.css.map": "/Portfolio/static/css/main.3f4cb0ba.chunk.css.map",
+    "static/js/2.25125ef5.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.25125ef5.chunk.js.LICENSE.txt",
     "static/media/Counter.33f6ddf1.png": "/Portfolio/static/media/Counter.33f6ddf1.png",
     "static/media/cards.0b319fa7.jpg": "/Portfolio/static/media/cards.0b319fa7.jpg",
     "static/media/covid-dashboard.6cc5aa04.jpg": "/Portfolio/static/media/covid-dashboard.6cc5aa04.jpg",
@@ -35,9 +35,9 @@
     "static/media/typescript.93d991c2.svg": "/Portfolio/static/media/typescript.93d991c2.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a82e31ea.js",
-    "static/js/2.748c180c.chunk.js",
-    "static/css/main.33159404.chunk.css",
-    "static/js/main.efc278c8.chunk.js"
+    "static/js/runtime-main.bc9f973c.js",
+    "static/js/2.25125ef5.chunk.js",
+    "static/css/main.3f4cb0ba.chunk.css",
+    "static/js/main.2128bfea.chunk.js"
   ]
 }
