@@ -1,4 +1,4 @@
-.skill{
+.skills{
     width: 250px;
     background-color: gold;
     display: flex;
@@ -10,13 +10,20 @@
     margin: 10px 0;
 }
 
+
 .discription{
     border: 1px solid;
 
 }
 .icon{
     border: 1px solid;
-    height: 60px;
-    width: 60px;
-    background-color: cornflowerblue;
+    height: 50px;
+    width: 50px;
+    display: block;
+}
+.skillsItems{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
 }

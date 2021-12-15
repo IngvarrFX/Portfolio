@@ -7,7 +7,7 @@ import reactIcon from "./images/react.svg"
 import sassIcon from "./images/sass.svg"
 import testingIcon from "./images/testing.svg"
 import reduxIcon from "./images/redux.svg"
-import myPhoto from "./images/my-photo.jpg"
+import myPhoto from "./images/myPhoto.jpeg"
 
 //Projects Covers
 import fancyWeather from "./images/fancy-weather-cover.jpg"
@@ -217,11 +217,11 @@ export default {
         // Add Or Remove The Link Accordingly
         {
             img: githubIcon,
-            url: "https://github.com/yauhendavidovich"
+            url: "https://github.com/ingvarrfx"
         },
         {
             img: linkedinIcon,
-            url: "https://www.linkedin.com/in/yauhendavidovich/",
+            url: "https://www.linkedin.com/in/igor-nurov-0b29a720a/",
         },
     ],
 

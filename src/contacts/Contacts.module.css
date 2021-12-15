@@ -2,6 +2,9 @@
     min-height: 700px;
     border: 1px solid;
 }
+.form{
+    max-width: 100%;
+}
 
 .contactsContainer{
     min-height: 500px;
@@ -26,7 +29,23 @@
 }
 
 .textField{
-    min-height: 90%;
-    width: 200px;
+    resize: vertical;
+    font-family: "Poppins",sans-serif;
+    color: #666;
     border: 1px solid;
+    max-width: 100%;
+    padding: 12px 26px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 30px;
+    outline: none!important;
+    transition: .3s;
+}
+textarea{
+
+    width: 100%;
+}
+.inputs{
+    display: flex;
+
 }

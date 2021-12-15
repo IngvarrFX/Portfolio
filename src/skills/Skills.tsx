@@ -3,6 +3,7 @@ import styles from './Skills.module.css'
 import stylesContainer from '../common/styles/Container.module.css'
 import {Skill} from './skill/Skill';
 import {Title} from "../components/title/Title";
+import data from "../myData"
 
 export const Skills = () => {
     return (
@@ -10,9 +11,16 @@ export const Skills = () => {
             <div className={`${stylesContainer.container} ${styles.skillsContainer}`}>
                 <Title firstPart={"My"} secondPart={"skills"}/>
                 <div className={styles.skills}>
-                    <Skill title={'JavaScript'} discription={'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet'}/>
-                    <Skill title={'CSS'} discription={'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}/>
-                    <Skill title={'HTML'} discription={'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}/>
+                    {data.skills.map((skill,index)=> {
+                        return (
+                            <div key={index} className={styles.skillsItems}>
+                                <Skill icon={skill.img} discription={skill.descriprion}/>
+                            </div>
+
+                        )
+                    })}
+                    {/*<Skill title={'CSS'} discription={'Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}/>
+                    <Skill title={'HTML'} discription={'Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit.'}/>*/}
                 </div>
             </div>
         </div>

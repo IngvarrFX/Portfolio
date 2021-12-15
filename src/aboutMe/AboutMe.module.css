@@ -14,8 +14,35 @@
 }
 .text{
     align-items: center;
-
+    justify-content: space-between;
+}
+.aboutMe{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+}
+.description{
+    width: 50%;
 }
 .remoteWorkContainer a {
     border: 1px solid;
+}
+.photo {
+    width: 300px;
+    border: 1px solid;
+}
+.photo img{
+    width: 100%;
+}
+
+
+@media screen and (max-width: 765px) {
+    .aboutMe {
+        flex-direction: column-reverse;
+
+    }
+    .photo{
+        margin-bottom: 30px;
+    }
 }

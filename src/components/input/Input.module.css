@@ -1,7 +1,16 @@
-input{
+input {
     width: 200px;
     height: 30px;
-    border: 1px solid;
+    border: 1px solid #ddd;
     margin: 5px;
     padding: 0 5px;
+}
+
+.input {
+    border-radius: 30px;
+    outline-color: #72b626;
+    color: #666666;;
+    padding: 11px 26px;
+    outline: none !important;
+    transition: .3s;
 }
