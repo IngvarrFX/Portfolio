@@ -11,10 +11,7 @@ type PropsType = {
 
 
 export const Input = (props: PropsType) => {
-    return (
-        <div>
-            <input name={props.name} value={props.value} className={styles.input} type={props.type}
+    return (<input name={props.name} value={props.value} className={styles.input} type={props.type}
                    placeholder={props.titleHolder} onChange={props.callBack}/>
-        </div>
     )
 }

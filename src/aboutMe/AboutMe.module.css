@@ -1,8 +1,9 @@
-.remoteWorkBlock{
+.aboutMeBlock {
     border: 1px solid;
     min-height: 30vh;
 }
-.remoteWorkContainer{
+
+.aboutMeContainer {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -12,29 +13,35 @@
     padding: 10px;
     border: 1px solid;
 }
-.text{
+
+.text {
     align-items: center;
     justify-content: space-between;
 }
-.aboutMe{
+
+.aboutMe {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
 }
-.description{
+
+.description {
     width: 50%;
 }
-.remoteWorkContainer a {
+
+.aboutMeContainer a {
     border: 1px solid;
 }
+
 .photo {
-    width: 300px;
+    width: 350px;
     border: 1px solid;
 }
-.photo img{
+
+.photo img {
     width: 100%;
 }
+
 
 
 @media screen and (max-width: 765px) {
@@ -42,7 +49,8 @@
         flex-direction: column-reverse;
 
     }
-    .photo{
+
+    .photo {
         margin-bottom: 30px;
     }
 }

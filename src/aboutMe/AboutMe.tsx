@@ -10,15 +10,15 @@ type PropsType = {
 
 export const AboutMe=(props: PropsType) => {
     return (
-        <div className={styles.remoteWorkBlock}>
+        <div className={styles.aboutMeBlock} id="aboutMe">
             <div className={stylesContainer.container}>
-                <div className={styles.remoteWorkContainer}>
+                <div className={styles.aboutMeContainer}>
                 <div className={styles.text}>
                    <Title firstPart={"About"} secondPart={"me"}/>
                 </div>
                     <div className={styles.aboutMe}>
                         <div className={styles.description}>
-                            <Description text={"I come from a provincial town in Belarus, currently living in ~~Cracow~~ on the road. My interest in web development started back in 2020 when I enrolled in a course for aspiring developers at RSSchool."}/>
+                            <Description text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur consequatur cumque ducimus eligendi exercitationem fuga ipsam libero nesciunt officiis pariatur perspiciatis porro quo repellendus repudiandae ut veniam, voluptate voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur consequatur cumque ducimus eligendi exercitationem fuga ipsam libero nesciunt officiis pariatur perspiciatis porro quo repellendus repudiandae ut veniam, voluptate voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur consequatur cumque ducimus eligendi exercitationem fuga ipsam libero nesciunt officiis pariatur perspiciatis porro quo repellendus repudiandae ut veniam, voluptate voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur consequatur cumque ducimus eligendi exercitationem fuga ipsam libero nesciunt officiis pariatur perspiciatis porro quo repellendus repudiandae ut veniam, voluptate voluptatibus."}/>
                         </div>
                         <div className={styles.photo}>
                             <img src={data.aboutImage}/>

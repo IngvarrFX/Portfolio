@@ -8,7 +8,7 @@ import data from "../myData"
 
 export const Projects = () => {
     return (
-        <div className={styles.projectsBlock}>
+        <div className={styles.projectsBlock} id="project">
             <div className={`${stylesContainer.container} ${styles.projectsContainer}`}>
                 <div className={styles.titleBlock}>
                     <Title firstPart={"My"} secondPart={"project"}/>

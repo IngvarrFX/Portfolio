@@ -7,7 +7,7 @@ import data from "../myData"
 
 export const Skills = () => {
     return (
-        <div className={styles.skillsBlock}>
+        <div className={styles.skillsBlock} id="skills">
             <div className={`${stylesContainer.container} ${styles.skillsContainer}`}>
                 <Title firstPart={"My"} secondPart={"skills"}/>
                 <div className={styles.skills}>

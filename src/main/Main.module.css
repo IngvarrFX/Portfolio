@@ -8,22 +8,33 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    align-items: center;
 }
 
 .text {
-    width: 300px;
+    width: 60%;
     background: white;
     border: 1px solid;
     text-align: center;
 }
-
+.text span{
+    font-size: 18px;
+}
+.text h2{
+    margin-bottom: 15px;
+}
+.text h3{
+    font-size: 51px;
+    line-height: 62px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
 
 
 .name{
     font-size: 51px;
     line-height: 62px;
     font-weight: 700;
-    margin: 18px 0 10px;
     position: relative;
     color: #72b626;
 }
