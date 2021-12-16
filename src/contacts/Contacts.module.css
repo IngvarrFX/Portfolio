@@ -11,7 +11,7 @@
 .contactsContainer {
     width: 100%;
     min-height: 500px;
-    text-align: center;
+
     border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -37,6 +37,15 @@
     border: 1px solid black;
 }
 
+.address i::after {
+    content: "";
+    background-image: url(../assets/address.svg);
+    background-position: center;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    color: #666;
+}
 
 .contactsContainer a {
     border: 1px solid;
@@ -64,8 +73,23 @@
     outline: none !important;
     transition: .3s;
 }
-.textContainer{
+
+.textContainer {
     margin: 0 5px 30px 5px;
+}
+
+input {
+    border-radius: 30px;
+    outline-color: #72b626;
+    color: #666666;;
+    padding: 11px 26px;
+    outline: none !important;
+    transition: .3s;
+    width: 100%;
+    height: 48px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+
 }
 
 textarea {
@@ -96,7 +120,7 @@ textarea {
 
 .submitBtn button::after {
     content: "";
-    background-image: url(../assets/plane.svg);
+    background-image: url(../assets/plane-2.svg);
     background-position: center;
     background-size: cover;
     height: 30px;
@@ -118,18 +142,19 @@ textarea {
         align-items: center;
     }
     .form{
-        width: 80%;
+        width: 100%;
         margin:30px 0;
     }
     .myContacts{
         width: 100%;
     }
-}
-
-@media screen and (max-width: 819px) {
     .inputs {
         display: flex;
         flex-direction: column;
     }
+}
+
+@media screen and (max-width: 819px) {
+
 }
 

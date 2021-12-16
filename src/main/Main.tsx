@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Main.module.css"
 import stylesContainer from "../common/styles/Container.module.css"
 import {Fade} from "react-awesome-reveal";
+import scrollTo from "gatsby-plugin-smoothscroll"
 
 export const Main = () => {
     return (
@@ -17,6 +18,11 @@ export const Main = () => {
                         </Fade>
                     </div>
                 </div>
+                <Fade cascade={true}>
+                    <div className={styles.btn}>
+                        <button onClick={()=> scrollTo("#contacts")}>Connect with me</button>
+                    </div>
+                </Fade>
             </div>
         </div>
     )
