@@ -8,6 +8,7 @@ import {Title} from "../components/title/Title";
 import * as Yup from "yup";
 import {Simulate} from "react-dom/test-utils";
 import save from "../assets/save.svg"
+import ModalWindow from "../components/modalWindow/ModalWindow";
 
 type PropsType = {}
 
@@ -65,14 +66,13 @@ export const Contacts = (props: PropsType) => {
                     <div className={styles.title}>
                         <Title firstPart={"My"} secondPart={"contacts"}/>
                     </div>
-
+                    <ModalWindow/>
                     <div className={styles.formBlock}>
                         <div className={styles.myContacts}>
                             <h2 style={{fontWeight: "bold", fontSize: "25px"}}>DON'T BE SHY !</h2>
                             <p>Feel free to contact me. I am always open to discuss new projects, creative ideas, or the
                                 possibility of becoming part of your vision.</p>
                             <div className={styles.address}>
-                                <i></i>
                                 <h4 style={{fontWeight: 500, fontSize: "20px"}}>ADDRESS POINT</h4>
                                 <span>Rostov region city of Novocherkassk.</span>
                             </div>
@@ -84,9 +84,11 @@ export const Contacts = (props: PropsType) => {
                                 <h4 style={{fontWeight: 500, fontSize: "20px"}}>MAIL ME</h4>
                                 <span>+7 932 477 71 23</span>
                             </div>
-                            <div className={styles.download}>
-                                <span style={{fontWeight: "bold", fontSize: "40px", color: "#000"}}>CV</span>
-                                <a href={"#"} ><img src={save}/></a>
+                            <div className={styles.downloadBtn}>
+                                <h1>CV</h1>
+                                <a href={"#"}  target="_blank"
+                                   rel="noopener noreferrer"
+                                   className={styles.download}/>
                             </div>
                         </div>
                         <form className={styles.form} action="/action_page.php" onSubmit={formik.handleSubmit}>
