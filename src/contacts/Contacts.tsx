@@ -2,12 +2,9 @@ import React, {ChangeEvent, useState} from "react"
 import {useFormik} from "formik";
 import styles from "./Contacts.module.css"
 import stylesContainer from "../common/styles/Container.module.css";
-import {Input} from "../components/input/Input";
 import emailjs from "emailjs-com";
 import {Title} from "../components/title/Title";
 import * as Yup from "yup";
-import {Simulate} from "react-dom/test-utils";
-import save from "../assets/save.svg"
 import ModalWindow from "../components/modalWindow/ModalWindow";
 
 type PropsType = {}
@@ -17,6 +14,7 @@ export const Contacts = (props: PropsType) => {
     const [name, setName] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
+    const [showModal, setShowModal] = useState(false)
 
     const onNameHandler = (e: ChangeEvent<HTMLInputElement>) => {
         setName(e.currentTarget.value)
@@ -53,6 +51,7 @@ export const Contacts = (props: PropsType) => {
                 setName("")
                 setEmail("")
                 setMessage("")
+                setShowModal(true)
             } catch {
                 console.log("error")
             }
@@ -66,27 +65,35 @@ export const Contacts = (props: PropsType) => {
                     <div className={styles.title}>
                         <Title firstPart={"My"} secondPart={"contacts"}/>
                     </div>
-                    <ModalWindow/>
+                    <ModalWindow isShow={showModal} callBack={setShowModal}/>
                     <div className={styles.formBlock}>
                         <div className={styles.myContacts}>
                             <h2 style={{fontWeight: "bold", fontSize: "25px"}}>DON'T BE SHY !</h2>
                             <p>Feel free to contact me. I am always open to discuss new projects, creative ideas, or the
                                 possibility of becoming part of your vision.</p>
                             <div className={styles.address}>
-                                <h4 style={{fontWeight: 500, fontSize: "20px"}}>ADDRESS POINT</h4>
-                                <span>Rostov region city of Novocherkassk.</span>
+                                <div>
+                                    <h4 style={{fontWeight: 500, fontSize: "20px"}}>ADDRESS POINT</h4>
+                                    <span>Rostov region city of Novocherkassk.</span>
+                                </div>
+
                             </div>
                             <div className={styles.email}>
-                                <h4 style={{fontWeight: 500, fontSize: "20px"}}>MAIL ME</h4>
-                                <span>nurov.mj@gmail.com</span>
+                                <div>
+                                    <h4 style={{fontWeight: 500, fontSize: "20px"}}>MAIL ME</h4>
+                                    <span>nurov.mj@gmail.com</span>
+                                </div>
+
                             </div>
                             <div className={styles.phone}>
-                                <h4 style={{fontWeight: 500, fontSize: "20px"}}>MAIL ME</h4>
-                                <span>+7 932 477 71 23</span>
+                                <div>
+                                    <h4 style={{fontWeight: 500, fontSize: "20px"}}>MAIL ME</h4>
+                                    <span>+7 932 477 71 23</span>
+                                </div>
                             </div>
                             <div className={styles.downloadBtn}>
                                 <h1>CV</h1>
-                                <a href={"#"}  target="_blank"
+                                <a href={"#"} target="_blank"
                                    rel="noopener noreferrer"
                                    className={styles.download}/>
                             </div>

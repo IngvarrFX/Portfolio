@@ -20,7 +20,11 @@ export const AboutMe = (props: PropsType) => {
                                     <Title firstPart={"About"} secondPart={"me"}/>
                                 </div>
                                 <Description
-                                    text={"Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur consequatur cumque ducimus eligendi exercitationem fuga ipsam libero nesciunt officiis pariatur perspiciatis porro quo repellendus repudiandae ut veniam, voluptate voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur consequatur cumque ducimus eligendi exercitationem fuga ipsam libero nesciunt officiis pariatur perspiciatis porro quo repellendus repudiandae ut veniam, voluptate voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur consequatur cumque ducimus eligendi exercitationem fuga ipsam libero nesciunt officiis pariatur perspiciatis porro quo repellendus repudiandae ut veniam, voluptate voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. At consectetur consequatur cumque ducimus eligendi exercitationem fuga ipsam libero nesciunt officiis pariatur perspiciatis porro quo repellendus repudiandae ut veniam, voluptate voluptatibus."}/>
+                                    text={"Fast-forward to today, and have experience in creating SPA applications using React, Redux, ES6+, HTML, CSS. My main focus these days is to build a successful career in commercial software development as a Front-end / JavaScript / React developer.\n" +
+                                    "\n" +
+                                    "My place in the world seems to be at the intersection of creativity and logic. All projects are a problem to be solved, whether it’s to do with design or code—only the tools change. I'm quietly confident, naturally curious, and perpetually working on improving my chops one code problem at a time.\n" +
+                                    "\n" +
+                                    "I am always experimenting, always learning, and never bored."}/>
                             </div>
                             <div className={styles.photo}>
                                 <img src={data.aboutImage}/>

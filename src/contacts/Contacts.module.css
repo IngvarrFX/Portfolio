@@ -34,19 +34,36 @@
 }
 
 .address {
+    display: flex;
     margin-top: 20px;
-    margin-left: 10px;
 
+
+}
+.address::before{
+    content:url('../assets/location.svg');
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 .email {
-    margin-left: 10px;
-
+    display: flex;
+    margin-top: 20px;;
+}
+.email::before{
+    content:url('../assets/email.svg');
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 .phone {
-    margin-left: 10px;
+    display: flex;
+    margin-top: 20px;
 
+}
+.phone::before{
+    content:url('../assets/phone.svg');
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 
