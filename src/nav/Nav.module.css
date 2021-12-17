@@ -1,12 +1,13 @@
 .nav {
     display: flex;
     justify-content: space-around;
-    border: 1px solid;
     width: 300px;
+    margin: 0 20px;
 }
 
-.nav a {
+.nav button {
     text-decoration: none;
     color: black;
-    border: 1px solid;
+    background-color: white;
+    font-weight: 200;
 }

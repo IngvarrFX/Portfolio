@@ -7,7 +7,7 @@ import emailjs from "emailjs-com";
 import {Title} from "../components/title/Title";
 import * as Yup from "yup";
 import {Simulate} from "react-dom/test-utils";
-import location from "../assets/address.svg"
+import save from "../assets/save.svg"
 
 type PropsType = {}
 
@@ -68,23 +68,26 @@ export const Contacts = (props: PropsType) => {
 
                     <div className={styles.formBlock}>
                         <div className={styles.myContacts}>
-                            <h2>DON'T BE SHY !</h2>
+                            <h2 style={{fontWeight: "bold", fontSize: "25px"}}>DON'T BE SHY !</h2>
                             <p>Feel free to contact me. I am always open to discuss new projects, creative ideas, or the
                                 possibility of becoming part of your vision.</p>
                             <div className={styles.address}>
                                 <i></i>
-                                <h4>ADDRESS POINT</h4>
+                                <h4 style={{fontWeight: 500, fontSize: "20px"}}>ADDRESS POINT</h4>
                                 <span>Rostov region city of Novocherkassk.</span>
                             </div>
-                            <div>
-                                <h4>MAIL ME</h4>
+                            <div className={styles.email}>
+                                <h4 style={{fontWeight: 500, fontSize: "20px"}}>MAIL ME</h4>
                                 <span>nurov.mj@gmail.com</span>
                             </div>
-                            <div>
-                                <h4>MAIL ME</h4>
+                            <div className={styles.phone}>
+                                <h4 style={{fontWeight: 500, fontSize: "20px"}}>MAIL ME</h4>
                                 <span>+7 932 477 71 23</span>
                             </div>
-                            <a href={"#"}>CV</a>
+                            <div className={styles.download}>
+                                <span style={{fontWeight: "bold", fontSize: "40px", color: "#000"}}>CV</span>
+                                <a href={"#"} ><img src={save}/></a>
+                            </div>
                         </div>
                         <form className={styles.form} action="/action_page.php" onSubmit={formik.handleSubmit}>
                             <div className={styles.inputs}>

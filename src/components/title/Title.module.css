@@ -2,9 +2,10 @@
     position: relative;
     display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 .title{
-    color: #666;
+
     font-family: 'Poppins', sans-serif;
     font-size: 56px;
     font-weight: 900!important;
@@ -14,10 +15,11 @@
 }
 .title span{
     color: #72b626;
+    font-weight: bold;
 }
 @media screen and (max-width: 765px) {
     .title {
-        font-size: 30px;
+        font-size: 40px;
     }
 }
 

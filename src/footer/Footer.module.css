@@ -1,9 +1,9 @@
-.footerBlock{
+.footerBlock {
     min-height: 400px;
     border: 1px solid;
 }
 
-.footerContainer{
+.footerContainer {
     min-height: 200px;
     width: 100%;
     margin: 0 auto;
@@ -14,15 +14,28 @@
     justify-content: space-between;
     align-items: center;
 }
-.itemContainer{
+
+.footerContainer h2 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.itemContainer {
     border: 1px solid;
     min-width: 20%;
 
     display: flex;
     justify-content: space-around;
 }
-.itemContainer a{
+
+.footerContainer a {
+    font-size: 25px;
+    color: black;
     padding: 0 5px;
+
+}
+.email{
+    border-bottom: 2px solid black;
 }
 .image {
     height: 50px;

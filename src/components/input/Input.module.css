@@ -9,10 +9,13 @@ input {
 .input {
     border-radius: 30px;
     outline-color: #72b626;
-    color: #666666;;
     padding: 11px 26px;
     outline: none !important;
     transition: .3s;
+}
+.input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
 }
 
 

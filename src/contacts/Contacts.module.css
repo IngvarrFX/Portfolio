@@ -10,8 +10,6 @@
 
 .contactsContainer {
     width: 100%;
-    min-height: 500px;
-
     border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -24,10 +22,10 @@
 
 .myContacts {
     width: 400px;
-    height: 500px;
+
     border: 1px solid black;
     display: flex;
-    color: #666;
+
     flex-direction: column;
     justify-content: space-between;
 }
@@ -37,14 +35,20 @@
     border: 1px solid black;
 }
 
-.address i::after {
-    content: "";
-    background-image: url(../assets/address.svg);
-    background-position: center;
-    background-size: cover;
-    height: 30px;
-    width: 30px;
-    color: #666;
+.address {
+    margin-top: 20px;
+    margin-left: 10px;
+
+}
+
+.email {
+    margin-left: 10px;
+
+}
+
+.phone {
+    margin-left: 10px;
+
 }
 
 .contactsContainer a {
@@ -53,7 +57,7 @@
 
 .formContainer {
     width: 400px;
-    min-height: 70%;
+
     border: 1px solid;
     display: flex;
     flex-direction: column;
@@ -63,7 +67,6 @@
 .textField {
     resize: vertical;
     font-family: "Poppins", sans-serif;
-    color: #666;
     border: 1px solid;
     width: 100%;
     padding: 12px 26px;
@@ -75,13 +78,12 @@
 }
 
 .textContainer {
-    margin: 0 5px 30px 5px;
+
 }
 
 input {
     border-radius: 30px;
     outline-color: #72b626;
-    color: #666666;;
     padding: 11px 26px;
     outline: none !important;
     transition: .3s;
@@ -110,7 +112,6 @@ textarea {
     justify-content: space-between;
     align-items: center;
     font-family: "Poppins", sans-serif;
-    color: #666;
 }
 
 .submitBtn button:hover {
@@ -125,8 +126,10 @@ textarea {
     background-size: cover;
     height: 30px;
     width: 30px;
-    color: #666;
+
 }
+
+
 
 .inputs {
     display: flex;
@@ -137,22 +140,30 @@ textarea {
 
 
 @media screen and (max-width: 1000px) {
-    .formBlock{
+    .formBlock {
         flex-direction: column;
         align-items: center;
     }
-    .form{
+
+    .form {
         width: 100%;
-        margin:30px 0;
+        margin: 30px 0;
     }
-    .myContacts{
+
+    .myContacts {
         width: 100%;
     }
+
     .inputs {
         display: flex;
         flex-direction: column;
     }
+
+    .contactsBlock {
+        margin-bottom: 50px;
+    }
 }
+
 
 @media screen and (max-width: 819px) {
 

@@ -7,10 +7,13 @@ import {Projects} from './projects/Projects';
 import {AboutMe} from "./aboutMe/AboutMe";
 import {Contacts} from "./contacts/Contacts";
 import {Footer} from "./footer/Footer";
+import Particles from "react-tsparticles";
 
 function App() {
+
     return (
         <div className={'appWrapper'}>
+
             <Header/>
             <Main/>
             <AboutMe/>

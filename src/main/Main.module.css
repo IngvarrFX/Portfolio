@@ -1,10 +1,10 @@
-.mainBlock{
+.mainBlock {
     background: #ffffff;
     border: 1px solid;
     margin-bottom: 30px;
 }
 
-.textBlock{
+.textBlock {
     display: flex;
     justify-content: center;
     width: 100%;
@@ -16,30 +16,39 @@
     background: white;
     border: 1px solid;
     text-align: center;
+    margin-bottom: 25px;
 }
-.text span{
+
+.text span {
     font-size: 18px;
 }
-.text h2{
+
+.text h2 {
     margin-bottom: 15px;
 }
-.text h3{
+
+.text h3 {
     font-size: 51px;
     line-height: 62px;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
+.greetings {
+    font-size: 25px;
+    font-weight:  bold;
+}
 
-.name{
+.name {
     font-size: 51px;
     line-height: 62px;
     font-weight: 700;
     position: relative;
     color: #72b626;
 }
-.btn button{
-    font-size: 25px;
+
+.btn button {
+    font-size: 15px;
     margin: 10px;
     padding: 10px;
     background-color: #000;
@@ -49,7 +58,43 @@
     text-decoration: none;
     cursor: pointer;
 }
-.btn button:hover{
+
+.btn button:hover {
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 710px) {
+   .name{
+       font-size: 40px;
+   }
+    .greetings{
+        font-size: 18px;
+    }
+    .text h3{
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width: 570px) {
+    .name{
+        font-size: 30px;
+    }
+    .greetings{
+        font-size: 15px;
+    }
+    .text h3{
+        font-size: 30px;
+    }
+    .text span {
+        font-size: 15px;
+    }
+    .btn button {
+        font-size: 13px;
+        padding: 5px;
+    }
+
+}
+
+
 
