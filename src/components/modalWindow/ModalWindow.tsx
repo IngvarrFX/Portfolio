@@ -36,7 +36,6 @@ export default function ModalWindow(props: ModalPropsType) {
 
     return (
         <div>
-            <Button onClick={handleOpen}>Open modal</Button>
             <Modal
                 open={open}
                 onClose={handleClose}

@@ -87,6 +87,7 @@
     border-radius: 30px;
     outline: none !important;
     transition: .3s;
+    margin-bottom: 5px;
 }
 
 .textContainer {
@@ -124,6 +125,8 @@ textarea {
     justify-content: space-between;
     align-items: center;
     font-family: "Poppins", sans-serif;
+    margin-top: 30px;
+    color: black;
 }
 
 .submitBtn button:hover {
@@ -156,7 +159,6 @@ textarea {
     padding: 18px;
     text-decoration: none;
     margin-left: 45%;
-
 }
 
 
@@ -165,6 +167,9 @@ textarea {
     margin-bottom: 30px;
     width: 100%;
     justify-content: space-around;
+}
+.inputs div{
+    width: 100%;
 }
 
 

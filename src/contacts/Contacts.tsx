@@ -6,9 +6,14 @@ import emailjs from "emailjs-com";
 import {Title} from "../components/title/Title";
 import * as Yup from "yup";
 import ModalWindow from "../components/modalWindow/ModalWindow";
+import TextField from "@mui/material/TextField";
 
 type PropsType = {}
-
+type FormikErrorType = {
+    email?: string
+    name?: string
+    message?: string
+}
 
 export const Contacts = (props: PropsType) => {
     const [name, setName] = useState("")
@@ -33,14 +38,36 @@ export const Contacts = (props: PropsType) => {
             email: "",
             message: "",
         },
-        validationSchema: Yup.object({
-            name: Yup.string()
-                .required("* Name field is required"),
-            email: Yup.string().email("Invalid email address")
-                .required("* Email field is required"),
-            message: Yup.string().required("* Message field is required")
-        }),
+        /* validationSchema: Yup.object({
+             name: Yup.string()
+                 .required("* Name field is required"),
+             email: Yup.string().email("Invalid email address")
+                 .required("* Email field is required"),
+             message: Yup.string().required("* Message field is required")
+         }),*/
+        validate: (values) => {
+            const errors: FormikErrorType = {};
+            if (!values.email) {
+                errors.email = "Email is required";
+            } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
+                errors.email = "Invalid email address";
+            }
+            if (!values.name) {
+                errors.name = "Name is Required";
+            } else if (values.name.length < 1) {
+                errors.name = "Name must be more 1."
+            }
+            if (!values.message) {
+                errors.message = "Message is required.";
+            } else if (values.name.length > 200) {
+                errors.message = "Еhe letter must be no more than 200 characters long."
+            }
+            return errors;
+        },
         onSubmit: values => {
+            if (!values.name || !values.email || !values.message) {
+                throw new Error("Fields not full")
+            }
             try {
                 emailjs.send("service_81vwzxp", "template_cxejyuo", values, "user_olv4NwwdwAKOfkDXDuMyo")
                     .then((result) => {
@@ -48,9 +75,7 @@ export const Contacts = (props: PropsType) => {
                     }, (error) => {
                         console.log(error.text);
                     });
-                setName("")
-                setEmail("")
-                setMessage("")
+                formik.resetForm()
                 setShowModal(true)
             } catch {
                 console.log("error")
@@ -104,16 +129,29 @@ export const Contacts = (props: PropsType) => {
                                        type={"text"}/>
                                 <Input name={"email"} value={email} callBack={onEmailHandler}
                                        titleHolder={"YOUR EMAIL"} type={"email"}/>*/}
-                                <input name={"name"} value={formik.values.name} placeholder={"YOUR NAME"} type={"text"}
-                                       onChange={formik.handleChange}/>
-                                <input name={"email"} value={formik.values.email} placeholder={"YOUR EMAIL"}
-                                       type={"email"} onChange={formik.handleChange}/>
+                                <div>
+                                    <input name={"name"} value={formik.values.name} placeholder={"YOUR NAME"} type={"text"}
+                                           onChange={formik.handleChange}/>
+                                    {formik.touched.name && formik.errors.name &&
+                                    <div style={{color: "red", marginLeft: "15px", marginBottom:"15px"}}>{formik.errors.name}</div>}
+                                </div>
+
+                                <div>
+                                    <input name={"email"} value={formik.values.email} placeholder={"YOUR EMAIL"}
+                                           type={"email"} onChange={formik.handleChange}/>
+                                    {formik.touched.email && formik.errors.email &&
+                                    <div style={{color: "red", marginLeft: "15px"}}>{formik.errors.email}</div>}
+                                </div>
+
+
                             </div>
                             <div className={styles.textContainer}>
                                 <textarea value={formik.values.message} name={"message"}
                                           className={styles.textField} placeholder={"YOUR MESSAGE"}
                                           onChange={formik.handleChange}
                                 />
+                                {formik.touched.message && formik.errors.message &&
+                                <div style={{color: "red", marginLeft: "15px"}}>{formik.errors.message}</div>}
                             </div>
                             <div className={styles.submitBtn}>
                                 <button type="submit">Send Message</button>

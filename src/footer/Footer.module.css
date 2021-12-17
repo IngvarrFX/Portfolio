@@ -34,10 +34,26 @@
     padding: 0 5px;
 
 }
-.email{
+
+.email {
     border-bottom: 2px solid black;
 }
+
 .image {
     height: 50px;
     border-radius: 11px;
+}
+
+@media screen and (max-width: 585px) {
+    .footerContainer h2 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .footerContainer a {
+        font-size: 20px;
+        color: black;
+        padding: 0 5px;
+        margin-bottom: 10px;
+
+    }
 }

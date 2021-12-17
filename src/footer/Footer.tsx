@@ -19,7 +19,7 @@ export const Footer = (props: PropsType) => {
                         <a href={data.social[1].url}><img className={styles.image} src={linkedin} alt=""/></a>
                         <a href={data.social[0].url}><img className={styles.image} src={github} alt=""/></a>
                     </div>
-                    <p>Made With by Igor Nurov</p>
+                    <p>Made With ❤️ by Igor Nurov</p>
                 </div>
             </div>
         </div>
