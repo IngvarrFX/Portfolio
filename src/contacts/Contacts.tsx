@@ -4,9 +4,7 @@ import styles from "./Contacts.module.css"
 import stylesContainer from "../common/styles/Container.module.css";
 import emailjs from "emailjs-com";
 import {Title} from "../components/title/Title";
-import * as Yup from "yup";
 import ModalWindow from "../components/modalWindow/ModalWindow";
-import TextField from "@mui/material/TextField";
 
 type PropsType = {}
 type FormikErrorType = {
@@ -94,7 +92,7 @@ export const Contacts = (props: PropsType) => {
                     <div className={styles.formBlock}>
                         <div className={styles.myContacts}>
                             <h2 style={{fontWeight: "bold", fontSize: "25px"}}>DON'T BE SHY !</h2>
-                            <p>Feel free to contact me. I am always open to discuss new projects, creative ideas, or the
+                            <p style={{ fontWeight:400}}>Feel free to contact me. I am always open to discuss new projects, creative ideas, or the
                                 possibility of becoming part of your vision.</p>
                             <div className={styles.address}>
                                 <div>
@@ -125,15 +123,16 @@ export const Contacts = (props: PropsType) => {
                         </div>
                         <form className={styles.form} action="/action_page.php" onSubmit={formik.handleSubmit}>
                             <div className={styles.inputs}>
-                                {/*<Input name={"name"} value={name} callBack={onNameHandler} titleHolder={"YOUR NAME"}
-                                       type={"text"}/>
-                                <Input name={"email"} value={email} callBack={onEmailHandler}
-                                       titleHolder={"YOUR EMAIL"} type={"email"}/>*/}
                                 <div>
-                                    <input name={"name"} value={formik.values.name} placeholder={"YOUR NAME"} type={"text"}
+                                    <input name={"name"} value={formik.values.name} placeholder={"YOUR NAME"}
+                                           type={"text"}
                                            onChange={formik.handleChange}/>
                                     {formik.touched.name && formik.errors.name &&
-                                    <div style={{color: "red", marginLeft: "15px", marginBottom:"15px"}}>{formik.errors.name}</div>}
+                                    <div style={{
+                                        color: "red",
+                                        marginLeft: "15px",
+                                        marginBottom: "15px"
+                                    }}>{formik.errors.name}</div>}
                                 </div>
 
                                 <div>

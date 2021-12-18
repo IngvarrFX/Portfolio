@@ -1,16 +1,13 @@
 .contactsBlock {
     min-height: 700px;
-    border: 1px solid;
 }
 
 .title {
-    border: 1px solid black;
     margin: 15px auto;
 }
 
 .contactsContainer {
     width: 100%;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
 }
@@ -21,23 +18,19 @@
 }
 
 .myContacts {
-    width: 400px;
-    border: 1px solid black;
+    width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
 .form {
-    width: 60%;
-    border: 1px solid black;
+    width: 45%;
 }
 
 .address {
     display: flex;
     margin-top: 20px;
-
-
 }
 .address::before{
     content:url('../assets/location.svg');
@@ -70,7 +63,6 @@
 
 .formContainer {
     width: 400px;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -88,6 +80,7 @@
     outline: none !important;
     transition: .3s;
     margin-bottom: 5px;
+    border-color: #ddd
 }
 
 .textContainer {

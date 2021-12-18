@@ -10,7 +10,7 @@ import reduxIcon from "./images/redux.svg"
 import myPhoto from "./images/myPhoto.jpeg"
 
 //Projects Covers
-import fancyWeather from "./images/fancy-weather-cover.jpg"
+import todolist from "./images/todolist.png"
 import englishForKids from "./images/english-for-kids.jpg"
 import socialNetwork from "./images/social-network-cover.png"
 import momentum from "./images/momentum.jpg"
@@ -28,10 +28,10 @@ import linkedinIcon from "./images/linkedin.svg"
 
 export default {
     //   Header Details ---------------------
-    name: "Yauhen",
+    name: "Igor",
     headerTagline: [
         //Line 1 For Header
-        "Yauhen Davidovich.",
+        "Igor Nurov.",
         //Line 2 For Header
         "I build things for the web."
     ],
@@ -40,7 +40,7 @@ export default {
         "Front End Developer ",
 
     //Contact Email
-    contactEmail: "davidovichyauhen@gmail.com",
+    contactEmail: "nurov.mj@gmail.com",
 
     // End Header Details -----------------------
 
@@ -71,7 +71,7 @@ export default {
             descriprion:
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
             imageSrc:
-            fancyWeather,
+            todolist,
             url: "https://ingvarrfx.github.io/Todolist/",
             page: "https://github.com/IngvarrFX/Todolist"
         },

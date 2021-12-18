@@ -1,24 +1,20 @@
 .skillsBlock {
-    border: 1px solid;
+
 }
 
 .skillsContainer {
-    border: 1px solid;
     flex-direction: column;
     justify-content: flex-start;
 }
 
 .title {
-    border: 1px solid;
     background-color: white;
 }
 
 
 .skills {
-    border: 1px solid;
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    margin-top: 50px;
     grid-gap: 30px;
 }
 

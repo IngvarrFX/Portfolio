@@ -1,6 +1,5 @@
 .mainBlock {
     background: #ffffff;
-    border: 1px solid;
     margin-bottom: 30px;
 }
 
@@ -14,7 +13,6 @@
 .text {
     width: 100%;
     background: white;
-    border: 1px solid;
     text-align: center;
     margin-bottom: 25px;
 }
