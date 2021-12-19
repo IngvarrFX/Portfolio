@@ -1,5 +1,5 @@
 .aboutMeBlock {
-    border: 1px solid;
+
 
 }
 
@@ -10,8 +10,7 @@
     align-items: center;
     min-height: 100px;
     width: 100%;
-    padding: 10px;
-    border: 1px solid;
+
 
 }
 
@@ -23,49 +22,71 @@
 .aboutMe {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
-    margin-bottom: 30px;
+    justify-content: space-around;
+    margin-bottom: 30px;;
 }
 
 .description {
+    margin-top: 40px;
     width: 50%;
-    border: 1px solid black;
+
 }
 
 .aboutMeContainer a {
-    border: 1px solid;
+
 }
 
 .photo {
+    width: 450px;
+    min-height: 550px;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/035/883/589/4k/tristan-mcguire-johnny-smoking.jpg?1616151556");
+    margin: 0 10px;
+   /* display: flex;
+    justify-content: center;
     width: 50%;
+    height: 500px;
     border: 1px solid;
+    overflow: hidden;
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/035/883/589/4k/tristan-mcguire-johnny-smoking.jpg?1616151556");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;*/
 }
 
-.photo img {
-    width: 50%;
-}
+/*.photo img {
+    width: 100%;
+}*/
 
 
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 1030px) {
     .aboutMe {
         flex-direction: column-reverse;
         align-items: center;
     }
     .photo{
-        width: 80%;
+        width: 500px;
     }
     .photo img{
         margin-bottom: 30px;
         width: 100%;
     }
     .description {
-        width: 90%;
-        border: 1px solid black;
+        width: 100%;
+        
     }
     .text{
         margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .photo{
+        width: 100%;
     }
 }

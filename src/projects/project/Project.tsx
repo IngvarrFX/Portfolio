@@ -8,7 +8,7 @@ type PropsType = {
     discription: string
     repositories?: string
     demoLink?: string
-    img: any
+    img: string
 }
 
 export const Project = (props: PropsType) => {
