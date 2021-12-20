@@ -1,11 +1,12 @@
-.navLinks {
+/*
+.nav {
     display: flex;
     justify-content: space-around;
     width: 300px;
     margin-right: 5%;
 }
 
-.navLinks button {
+.nav button {
     text-decoration: none;
     color: black;
     background-color: white;
@@ -14,14 +15,57 @@
 
 }
 
-.navLinks button:hover {
+.nav button:hover {
     cursor: pointer;
     color: #72b626;
 }
 
+.nav .burgerNavigation {
+    display: none;
+}
+
 .links {
     display: flex;
+    background-color: #181818;
+    z-index: 1;
+    border: 1px solid black;
+    height: 100vh;
 }
-.links li{
+
+.links li {
     margin-right: 10px;
 }
+
+@media screen and (max-width: 1024px) {
+    .nav .navigation {
+        display: none;
+    }
+
+    .nav .burgerNavigation {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .nav .burgerNavigation .burger {
+        position: absolute;
+        right: 5%;
+        cursor: pointer;
+
+    }
+    .nav{
+        width: 100%;
+    }
+
+    .links {
+        flex-direction: column;
+        justify-content: space-between;
+
+    }
+
+    .nav nav .links {
+        display: flex;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+}
+*/

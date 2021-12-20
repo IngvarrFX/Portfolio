@@ -8,12 +8,12 @@ import {AboutMe} from "./aboutMe/AboutMe";
 import {Contacts} from "./contacts/Contacts";
 import {Footer} from "./footer/Footer";
 import Particles from "react-tsparticles";
+import {Nav} from "./nav/Nav";
 
 function App() {
 
     return (
         <div className={'appWrapper'}>
-
             <Header/>
             <Main/>
             <AboutMe/>

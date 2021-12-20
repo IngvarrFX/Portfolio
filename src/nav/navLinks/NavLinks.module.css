@@ -1,0 +1,22 @@
+.menuBlock{
+
+}
+
+.menu{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: black;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    padding-top: 50px;
+}
+.menu button{
+    font-size: 40px;
+    margin-bottom: 80px;
+    color: white;
+    background-color: black;
+}

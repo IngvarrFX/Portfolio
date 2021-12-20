@@ -106,7 +106,7 @@
 
 @media screen and (max-width: 765px) {
     .projectBlock {
-        min-width: 90%;
+        min-width: 100%;
     }
     .projectTitle h2 {
         font-size: 15px;
