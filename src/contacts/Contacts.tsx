@@ -104,14 +104,14 @@ export const Contacts = (props: PropsType) => {
                             <div className={styles.email}>
                                 <div>
                                     <h4 style={{fontWeight: 500, fontSize: "20px"}}>MAIL ME</h4>
-                                    <span>nurov.mj@gmail.com</span>
+                                    <a style={{textDecoration: "none", color: "#000", fontFamily: "Poppins", fontWeight:500}} href={"mailto:nurov.mj@gmail.com"}>nurov.mj@gmail.com</a>
                                 </div>
 
                             </div>
                             <div className={styles.phone}>
                                 <div>
                                     <h4 style={{fontWeight: 500, fontSize: "20px"}}>MAIL ME</h4>
-                                    <span>+7 932 477 71 23</span>
+                                    <a style={{textDecoration: "none", color: "#000", fontFamily: "Poppins", fontWeight:500}} href="tel:+7 932 477 71 23">+7 932 477 71 23</a>
                                 </div>
                             </div>
                             <div className={styles.downloadBtn}>

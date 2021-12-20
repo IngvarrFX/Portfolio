@@ -32,9 +32,7 @@ export const AboutMe = (props: PropsType) => {
                                 </p>
                             </div>
                             <div className={styles.photo}
-                                style={{
-                                backgroundImage:"https://cdnb.artstation.com/p/assets/images/images/035/883/589/4k/tristan-mcguire-johnny-smoking.jpg?1616151556"
-                            }}>
+                                >
                                {/* <img src="https://cdnb.artstation.com/p/assets/images/images/035/883/589/4k/tristan-mcguire-johnny-smoking.jpg?1616151556"/>*/}
                             </div>
 

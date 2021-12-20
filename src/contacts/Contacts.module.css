@@ -14,7 +14,7 @@
 
 .formBlock {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .myContacts {
@@ -22,6 +22,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-right: 30px;
+    padding-left: 20px;
 }
 
 .form {
@@ -151,7 +153,7 @@ textarea {
     background-repeat: no-repeat;
     padding: 18px;
     text-decoration: none;
-    margin-left: 45%;
+    margin: 0 auto;
 }
 
 
@@ -193,6 +195,12 @@ textarea {
 
 
 @media screen and (max-width: 819px) {
-
+    .textField {
+        height: 120px;
+    }
+    .submitBtn{
+        display: flex;
+        justify-content: flex-end;
+    }
 }
 

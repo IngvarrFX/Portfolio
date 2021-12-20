@@ -1,13 +1,27 @@
-.nav {
+.navLinks {
     display: flex;
     justify-content: space-around;
     width: 300px;
-    margin: 0 20px;
+    margin-right: 5%;
 }
 
-.nav button {
+.navLinks button {
     text-decoration: none;
     color: black;
     background-color: white;
-    font-weight: 200;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+
+.navLinks button:hover {
+    cursor: pointer;
+    color: #72b626;
+}
+
+.links {
+    display: flex;
+}
+.links li{
+    margin-right: 10px;
 }
