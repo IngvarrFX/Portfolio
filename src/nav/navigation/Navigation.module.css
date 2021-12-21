@@ -1,0 +1,12 @@
+.navBar{
+    display: flex;
+    justify-content: space-around;
+}
+.navBar button{
+    margin-right: 20px;background-color: white;
+    transition: 0.3s;
+}
+.navBar button:hover{
+    color: #72b626;
+}
+

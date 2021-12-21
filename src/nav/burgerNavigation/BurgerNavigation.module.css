@@ -1,11 +1,31 @@
-.burgerMenu{
-    display: flex;
+.burgerMenu {
     top: 0;
     position: absolute;
-
-
+    display: none;
 }
-.burger{
-    z-index: 10000;
+
+.burgerBlock{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.burger {
+    z-index: 10;
     margin: 50px 0 0 30px;
+    cursor: pointer;
+
+
 }
+
+@media screen and (max-width: 429px) {
+    .burger {
+        margin: 55px 0 0 20px;
+    }
+
+}
+@media screen and (max-width: 1024px) {
+    .burgerMenu {
+        display: flex;
+    }
+}
+

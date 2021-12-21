@@ -7,16 +7,22 @@
     height: 100vh;
     position: absolute;
     background-color: black;
-    opacity: 0.8;
+    opacity: 0.9;
     display: flex;
     flex-direction: column;
     align-items: center;
     z-index: 1;
     padding-top: 50px;
 }
+
 .menu button{
     font-size: 40px;
     margin-bottom: 80px;
     color: white;
     background-color: black;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.menu button:hover{
+    color: #72b626;
 }

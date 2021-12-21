@@ -2,4 +2,11 @@
     height: 80px;
     display: flex;
     align-items: center;
+    justify-content: flex-end;
+    margin-right: 5%;
+}
+@media screen and (max-width: 1024px) {
+    .header{
+        justify-content: space-between;
+    }
 }

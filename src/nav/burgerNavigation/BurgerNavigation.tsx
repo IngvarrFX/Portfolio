@@ -1,22 +1,23 @@
 import React, {useState} from "react";
 import {NavLinks} from "../navLinks/NavLinks";
 import styles from "./BurgerNavigation.module.css"
-
-import {CgMenuRound} from "react-icons/cg";
-import {CgCloseO} from "react-icons/cg";
+import {GiHamburgerMenu} from "react-icons/gi";
+import {CgClose} from "react-icons/cg";
 
 
 export const BurgerNavigation = () => {
     const [isShow, setIsShow] = useState(false)
-
-    const burger = <CgMenuRound className={styles.burger} size={"50px"} color={"black"}
+    const burger = <GiHamburgerMenu className={styles.burger} size={"40px"} color={"black"}
                                 onClick={() => setIsShow(!isShow)}/>
-    const close = <CgCloseO className={styles.burger} size={"45px"} color={"white"}
+    const close = <CgClose className={styles.burger} size={"45px"} color={"white"}
                             onClick={() => setIsShow(!isShow)}/>
+
     return (
         <nav>
             <div className={styles.burgerMenu}>
-                {isShow ? close : burger}
+                <div className={styles.burgerBlock}>
+                    {isShow ? close : burger}
+                </div>
                 {isShow && <NavLinks callBack={(value) => setIsShow(value)}/>}
             </div>
         </nav>

@@ -23,7 +23,7 @@ export const NavLinks = (props: NavLinksPropsType) => {
                 <ul className={styles.menu}>
                     {arrayId.map((item, index) => {
                         return (
-                            <button key={index} onClick={() => linkClickHandler(item.id)}>{item.name}</button>
+                            <button key={index} onClick={() => linkClickHandler(item.id) }>{item.name}</button>
                         )
                     })}
                 </ul>
