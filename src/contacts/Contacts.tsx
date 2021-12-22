@@ -36,13 +36,7 @@ export const Contacts = (props: PropsType) => {
             email: "",
             message: "",
         },
-        /* validationSchema: Yup.object({
-             name: Yup.string()
-                 .required("* Name field is required"),
-             email: Yup.string().email("Invalid email address")
-                 .required("* Email field is required"),
-             message: Yup.string().required("* Message field is required")
-         }),*/
+
         validate: (values) => {
             const errors: FormikErrorType = {};
             if (!values.email) {

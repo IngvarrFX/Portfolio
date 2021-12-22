@@ -4,7 +4,7 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 import {Fade} from "react-awesome-reveal";
 
 type NavLinksPropsType = {
-    callBack: (value: boolean) => void
+    setIsShow: (value: boolean) => void
 }
 
 export const NavLinks = (props: NavLinksPropsType) => {
@@ -13,9 +13,9 @@ export const NavLinks = (props: NavLinksPropsType) => {
         id: "#project"
     }, {name: "Skills", id: "#skills"}, {name: "Contacts", id: "#contacts"}]
 
-    const linkClickHandler = (id: string) => {
+    const handlerScrollToClick = (id: string) => {
         scrollTo(id)
-        props.callBack(false)
+        props.setIsShow(false)
     }
 
     return (
@@ -23,7 +23,7 @@ export const NavLinks = (props: NavLinksPropsType) => {
                 <ul className={styles.menu}>
                     {arrayId.map((item, index) => {
                         return (
-                            <button key={index} onClick={() => linkClickHandler(item.id) }>{item.name}</button>
+                            <button key={index} onClick={() => handlerScrollToClick(item.id) }>{item.name}</button>
                         )
                     })}
                 </ul>

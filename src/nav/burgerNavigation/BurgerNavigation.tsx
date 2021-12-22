@@ -18,7 +18,7 @@ export const BurgerNavigation = () => {
                 <div className={styles.burgerBlock}>
                     {isShow ? close : burger}
                 </div>
-                {isShow && <NavLinks callBack={(value) => setIsShow(value)}/>}
+                {isShow && <NavLinks setIsShow={(value) => setIsShow(value)}/>}
             </div>
         </nav>
     );
