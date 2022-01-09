@@ -19,8 +19,7 @@
 }
 
 .itemContainer {
-    min-width: 20%;
-
+    min-width: 10%;
     display: flex;
     justify-content: space-around;
 }
