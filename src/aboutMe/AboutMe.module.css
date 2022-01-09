@@ -41,26 +41,16 @@
     min-height: 550px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center;/*
     background-size: cover;
     background-position: center;
-    background-image: url("https://cdnb.artstation.com/p/assets/images/images/035/883/589/4k/tristan-mcguire-johnny-smoking.jpg?1616151556");
+    background-image: url("https://cdnb.artstation.com/p/assets/images/images/035/883/589/4k/tristan-mcguire-johnny-smoking.jpg?1616151556");*/
     margin: 0 10px;
-   /* display: flex;
-    justify-content: center;
-    width: 50%;
-    height: 500px;
-    border: 1px solid;
-    overflow: hidden;
-    background-image: url("https://cdnb.artstation.com/p/assets/images/images/035/883/589/4k/tristan-mcguire-johnny-smoking.jpg?1616151556");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;*/
+}
+.photo img{
+    width: 90%;
 }
 
-/*.photo img {
-    width: 100%;
-}*/
 
 
 

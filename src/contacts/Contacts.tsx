@@ -85,7 +85,7 @@ export const Contacts = (props: PropsType) => {
                     <ModalWindow isShow={showModal} callBack={setShowModal}/>
                     <div className={styles.formBlock}>
                         <div className={styles.myContacts}>
-                            <h2 style={{fontWeight: "bold", fontSize: "25px"}}>DON'T BE SHY !</h2>
+                            <h2 style={{fontWeight: "bold", fontSize: "24px"}}>DON'T BE SHY !</h2>
                             <p style={{ fontWeight:400}}>Feel free to contact me. I am always open to discuss new projects, creative ideas, or the
                                 possibility of becoming part of your vision.</p>
                             <div className={styles.address}>
@@ -104,7 +104,7 @@ export const Contacts = (props: PropsType) => {
                             </div>
                             <div className={styles.phone}>
                                 <div>
-                                    <h4 style={{fontWeight: 500, fontSize: "20px"}}>MAIL ME</h4>
+                                    <h4 style={{fontWeight: 500, fontSize: "20px"}}>MY PHONE</h4>
                                     <a style={{textDecoration: "none", color: "#000", fontFamily: "Poppins", fontWeight:500}} href="tel:+7 932 477 71 23">+7 932 477 71 23</a>
                                 </div>
                             </div>

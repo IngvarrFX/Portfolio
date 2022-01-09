@@ -7,7 +7,7 @@ import reactIcon from "./images/react.svg"
 import sassIcon from "./images/sass.svg"
 import testingIcon from "./images/testing.svg"
 import reduxIcon from "./images/redux.svg"
-import myPhoto from "./images/myPhoto.jpeg"
+import myPhoto from "./images/IMG_8330.jpg"
 
 //Projects Covers
 import todolist from "./images/todolist.png"
@@ -124,17 +124,6 @@ export default {
             url: "https://github.com/IngvarrFX/Counter",
             page: "https://ingvarrfx.github.io/Counter/",
         },
-        /*{
-            title: "Vanilla JS keyboard",
-            descriprion:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
-
-            imageSrc:
-            keyboard,
-            url: "https://github.com/YauhenDavidovich/Rsschool2021-EN/tree/virtual-keyboard/virtual-keyboard",
-            page: "https://virtual-keyboard-rsschool-yauhen-davidovich.netlify.app/",
-        },*/
-
     ],
 
     // End Work Section -----------------------

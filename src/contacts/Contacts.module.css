@@ -202,5 +202,8 @@ textarea {
         display: flex;
         justify-content: flex-end;
     }
+    .myContacts h2{
+        font-size: 20px;
+    }
 }
 

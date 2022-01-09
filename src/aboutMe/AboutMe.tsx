@@ -33,7 +33,7 @@ export const AboutMe = (props: PropsType) => {
                             </div>
                             <div className={styles.photo}
                                 >
-                               {/* <img src="https://cdnb.artstation.com/p/assets/images/images/035/883/589/4k/tristan-mcguire-johnny-smoking.jpg?1616151556"/>*/}
+                                <img src={data.aboutImage}/>
                             </div>
 
                         </div>
