@@ -20,7 +20,7 @@ export const Projects = () => {
                             <Project key={index} title={project.title} discription={project.descriprion}
                                      img={project.imageSrc}
                                      repositories={project.url}
-                                     demoLink={project.page}
+                                     demoLink={project.demoPage}
                             />
                         )
                     })}

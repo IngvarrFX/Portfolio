@@ -54,7 +54,7 @@ export default {
             imageSrc:
             socialNetwork,
             url: "https://github.com/IngvarrFX/samurai_way",
-            page: "https://ingvarrfx.github.io/samurai_way/",
+            demoPage: "https://ingvarrfx.github.io/samurai_way/",
         },
         {
             title: "Cards",
@@ -64,7 +64,7 @@ export default {
             imageSrc:
             cards,
             url: "https://github.com/YauhenDavidovich/card-learning",
-            page: "https://yauhendavidovich.github.io/card-learning",
+            demoPage: "https://yauhendavidovich.github.io/card-learning",
         },
         {
             title: "Todo list",
@@ -72,48 +72,10 @@ export default {
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
             imageSrc:
             todolist,
-            url: "https://ingvarrfx.github.io/Todolist/",
-            page: "https://github.com/IngvarrFX/Todolist"
+            url: "https://github.com/IngvarrFX/Todolist",
+            demoPage: "https://ingvarrfx.github.io/Todolist/"
         },
-        {
-            title: "English for kids",
-            descriprion:
-                "App for learning English words by children.",
-            imageSrc:
-            englishForKids,
-            url: "https://github.com/YauhenDavidovich/rsschool2020-2021/tree/english-for-kids/english-for-kids",
-            page: "https://yauhendavidovich-english-for-kids.netlify.app/",
-        },
-        {
-            title: "Covid Dashboard",
-            descriprion:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
 
-            imageSrc:
-            covidDashboard,
-            url: "https://github.com/nkrivitsky/COVID-19-Dashboard/tree/develop",
-            page: "https://covid-dashboard-yauhendavidovich-nkrivitsky-omaslov.netlify.app/"
-        },
-        {
-            title: "Momentum",
-            descriprion:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
-
-            imageSrc:
-            momentum,
-            url: "https://github.com/YauhenDavidovich/rsschool2020-2021/tree/momentum/momentum",
-            page: "https://rolling-scopes-school.github.io/yauhendavidovich-JS2020Q3/momentum/"
-        },
-        {
-            title: "Shelter",
-            descriprion:
-                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.", // Add Your Service Type Here
-
-            imageSrc:
-            shelter,
-            url: "https://github.com/YauhenDavidovich/rsschool2020-2021/tree/shelter",
-            page: "https://rolling-scopes-school.github.io/yauhendavidovich-JS2020Q3/shelter/pages/main/main.html",
-        },
         {
             title: "Counter",
             descriprion:
@@ -122,7 +84,7 @@ export default {
             imageSrc:
             counter,
             url: "https://github.com/IngvarrFX/Counter",
-            page: "https://ingvarrfx.github.io/Counter/",
+            demoPage: "https://ingvarrfx.github.io/Counter/",
         },
     ],
 
@@ -130,9 +92,9 @@ export default {
 
     // About Secton --------------
     aboutParaOne:
-        "I come from a provincial town in Belarus, currently living in ~~Cracow~~ on the road. My interest in web development started back in 2020 when I enrolled in a course for aspiring developers at RSSchool.",
+        "I come from a provincial town in Ust-Ilimsk, currently I live in Novocherkassk.  My interest in web development started back in 2019 when I got my hands on the Head First HTML and CSS book.",
     aboutParaTwo:
-        "Fast-forward to today, and have experience in creating SPA applications using React, Redux, ES6+, HTML, CSS. My main focus these days is to build a successful career in commercial software development as a Front-end / JavaScript / React developer.",
+        "Fast forward to today and get the experience of creating SPA applications using React, Redux, ES6 +, HTML, CSS.  I am currently focused on pursuing a successful career in commercial software development as a Front-end / JavaScript / React developer.",
     aboutParaThree:
         "My place in the world seems to be at the intersection of creativity and logic. All projects are a problem to be solved, whether it’s to do with design or code—only the tools change. \n" +
         "I'm quietly confident, naturally curious, and perpetually working on improving my chops one code problem at a time.\n",
@@ -181,13 +143,13 @@ export default {
         {
             img: testingIcon,
             descriprion:
-                "Unit Tests, Storybook, Jest",
+                "Unit Tests, Storybook",
         },
-        {
-            img: sassIcon,
-            descriprion:
-                "Sass",
-        },
+        /*   {
+               img: sassIcon,
+               descriprion:
+                   "Sass",
+           },*/
     ],
 
     // End Skills Section --------------------------
