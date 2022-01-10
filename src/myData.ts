@@ -158,7 +158,7 @@ export default {
 
     promotionHeading: "СV",
     promotionPara:
-        "https://drive.google.com/file/d/1CMyOaAilLa6MyculaMD_rDmQEjo_KPsj/view?usp=sharing",
+        "https://drive.google.com/file/d/1rpfRo497m3_0_LKx6P4uB2j_ZcETHFJR/view?usp=sharing",
     // End Promotion Section -----------------
 
     //   Contact Section --------------

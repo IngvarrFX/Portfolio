@@ -5,6 +5,7 @@ import stylesContainer from "../common/styles/Container.module.css";
 import emailjs from "emailjs-com";
 import {Title} from "../components/title/Title";
 import ModalWindow from "../components/modalWindow/ModalWindow";
+import myData from "../myData";
 
 type PropsType = {}
 type FormikErrorType = {
@@ -110,7 +111,7 @@ export const Contacts = (props: PropsType) => {
                             </div>
                             <div className={styles.downloadBtn}>
                                 <h1>CV</h1>
-                                <a href={"#"} target="_blank"
+                                <a href={myData.promotionPara} target="_blank"
                                    rel="noopener noreferrer"
                                    className={styles.download}/>
                             </div>
